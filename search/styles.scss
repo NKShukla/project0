@@ -1,0 +1,170 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body {
+  font-style: arial,sans-serif;
+}
+
+%links {
+  text-decoration: none;
+}
+
+%links:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+header {
+  padding: 15px 22px;
+  text-align: right;
+  font-size: 13px;
+
+  #image-search, #advanced-search {
+    @extend %links;
+    color: #202124;
+    color: -internal-light-dark(black, white);
+    margin: 5px;
+  }
+
+  #grid-icon {
+    width: 16px;
+    margin: 1px 6px 5px 15px;
+    opacity: 0.55;
+  }
+
+  #grid-icon:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+
+  #google-avatar{
+    width: 32px;
+    margin: 0px 7px 5px 12px;
+  }
+
+  #google-avatar:hover{
+    cursor: pointer;
+  }
+}
+
+.main {
+  text-align: center;
+  margin: 90px auto;
+  color: -internal-light-dark(black, white);
+
+  #logo {
+    width: 272px;
+  }
+
+  .search-bar {
+    margin: 25px auto;
+    padding: 5px 0;
+    width: 580px;
+    height: 46px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+
+    #search-image {
+      width: 14px;
+      padding-bottom: 2px;
+    }
+
+    #search-space {
+      padding: 5px 0;
+      margin: 0 10px;
+      width: 440px;
+      font-size: 14px;
+      border: none;
+    }
+
+    input#search-space:focus {
+      outline: none;
+    }
+
+    #clear-image {
+      width: 26px;
+      margin-right: 12px;
+      padding: 8px 12px 8px 0;
+      border-right: 1px solid #ebecef;
+      opacity: 0.8;
+    }
+    #clear-image:hover {
+      cursor: pointer;
+    }
+
+    #voice-search-image {
+      width: 14px;
+    }
+    #voice-search-image:hover {
+      cursor: pointer;
+    }
+  }
+
+  .btn.btn-light {
+    margin: 5px;
+    border: 2px solid transparent;
+  }
+
+  .btn.btn-light:hover {
+    background-color: #f8f9fa;
+    border: 2px solid lightgrey;
+  }
+
+  .lang{
+    margin: 22px auto;
+    font-size: 14px;
+
+    .lang-option{
+      @extend %links;
+      color: #1a0dab;
+      color: -internal-light-dark(black, white);
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 82px;
+  width: 100%;
+  background: #f2f2f2;
+  font-size: 15px;
+  font-weight: 400;
+  color: #858481;
+  color: -internal-light-dark(black, white);
+
+  .help-bar{
+    padding: 8px 30px;
+    height: 50%;
+    width: 100%;
+    border-top: 1px solid #dadce0;
+  }
+
+  .left-help{
+    position: absolute;
+    left: 17px;
+  }
+
+  .right-help{
+    position: absolute;
+    right: 17px;
+  }
+
+  .help-option{
+    @extend %links;
+    color: #858481;
+    color: -internal-light-dark(black, white);
+    padding: 0 13px;
+    letter-spacing: -0.5px;
+  }
+
+  #location {
+    letter-spacing: 0;
+  }
+}

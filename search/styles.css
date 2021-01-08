@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-style: arial, sans-serif;
+}
+
+footer .help-option, .main .lang .lang-option, header #image-search, header #advanced-search {
+  text-decoration: none;
+}
+
+footer .help-option:hover, .main .lang .lang-option:hover, header #image-search:hover, header #advanced-search:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+header {
+  padding: 15px 22px;
+  text-align: right;
+  font-size: 13px;
+}
+header #image-search, header #advanced-search {
+  color: #202124;
+  color: -internal-light-dark(black, white);
+  margin: 5px;
+}
+header #grid-icon {
+  width: 16px;
+  margin: 1px 6px 5px 15px;
+  opacity: 0.55;
+}
+header #grid-icon:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+header #google-avatar {
+  width: 32px;
+  margin: 0px 7px 5px 12px;
+}
+header #google-avatar:hover {
+  cursor: pointer;
+}
+
+.main {
+  text-align: center;
+  margin: 90px auto;
+  color: -internal-light-dark(black, white);
+}
+.main #logo {
+  width: 272px;
+}
+.main .search-bar {
+  margin: 25px auto;
+  padding: 5px 0;
+  width: 580px;
+  height: 46px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+}
+.main .search-bar #search-image {
+  width: 14px;
+  padding-bottom: 2px;
+}
+.main .search-bar #search-space {
+  padding: 5px 0;
+  margin: 0 10px;
+  width: 440px;
+  font-size: 14px;
+  border: none;
+}
+.main .search-bar input#search-space:focus {
+  outline: none;
+}
+.main .search-bar #clear-image {
+  width: 26px;
+  margin-right: 12px;
+  padding: 8px 12px 8px 0;
+  border-right: 1px solid #ebecef;
+  opacity: 0.8;
+}
+.main .search-bar #clear-image:hover {
+  cursor: pointer;
+}
+.main .search-bar #voice-search-image {
+  width: 14px;
+}
+.main .search-bar #voice-search-image:hover {
+  cursor: pointer;
+}
+.main .btn.btn-light {
+  margin: 5px;
+  border: 2px solid transparent;
+}
+.main .btn.btn-light:hover {
+  background-color: #f8f9fa;
+  border: 2px solid lightgrey;
+}
+.main .lang {
+  margin: 22px auto;
+  font-size: 14px;
+}
+.main .lang .lang-option {
+  color: #1a0dab;
+  color: -internal-light-dark(black, white);
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 82px;
+  width: 100%;
+  background: #f2f2f2;
+  font-size: 15px;
+  font-weight: 400;
+  color: #858481;
+  color: -internal-light-dark(black, white);
+}
+footer .help-bar {
+  padding: 8px 30px;
+  height: 50%;
+  width: 100%;
+  border-top: 1px solid #dadce0;
+}
+footer .left-help {
+  position: absolute;
+  left: 17px;
+}
+footer .right-help {
+  position: absolute;
+  right: 17px;
+}
+footer .help-option {
+  color: #858481;
+  color: -internal-light-dark(black, white);
+  padding: 0 13px;
+  letter-spacing: -0.5px;
+}
+footer #location {
+  letter-spacing: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
